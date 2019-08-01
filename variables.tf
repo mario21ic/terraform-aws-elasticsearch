@@ -84,9 +84,9 @@ variable "iops" {
 
 # access policies
 
-//variable "access_policies" {
-//  description = ""
-//}
+variable "access_policies" {
+  description = ""
+}
 
 # advance variables
 
