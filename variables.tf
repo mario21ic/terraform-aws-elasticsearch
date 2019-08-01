@@ -78,9 +78,9 @@ variable "volume_size" {
   description = "the size of EBS volumes attached to data nodes (in GB). Required if ebs_enabled is set to true."
 }
 
-variable "iops" {
-  description = "the baseline input/output (I/O) performance of EBS volumes attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type."
-}
+//variable "iops" {
+//  description = "the baseline input/output (I/O) performance of EBS volumes attached to data nodes. Applicable only for the Provisioned IOPS EBS volume type."
+//}
 
 # access policies
 

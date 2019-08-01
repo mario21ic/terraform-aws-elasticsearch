@@ -22,7 +22,7 @@ resource "aws_elasticsearch_domain" "aws_elasticsearch_cluster" {
     ebs_enabled = "${var.ebs_enabled}"
     volume_type = "${var.volume_type}"
     volume_size = "${var.volume_size}"
-    iops        = "${var.iops}"
+    //iops        = "${var.iops}"
   }
 
   snapshot_options {
