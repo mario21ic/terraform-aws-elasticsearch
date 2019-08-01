@@ -34,25 +34,7 @@ resource "aws_elasticsearch_domain" "aws_elasticsearch_cluster" {
     "indices.fielddata.cache.size"           = "${var.indices_fielddata_cache_size}"
   }
 
-  access_policies = <<EOF
-{
-  "Version": "2012-10-17",
-  "Statement": [
-    {
-      "Effect": "Allow",
-      "Principal": {
-        "AWS": [
-          "*"
-        ]
-      },
-      "Action": [
-        "es:*"
-      ],
-      "Resource": "arn:aws:es:us-west-2:794250218868:domain/${var.env}-${var.domain_name}/*"
-    }
-  ]
-}
-EOF
+  access_policies = "${var.access_policies}"
 
   tags {
     Name        = "${var.tag_name}"
